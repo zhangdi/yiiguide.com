@@ -1,0 +1,25 @@
+{
+    "name": "zhangdi/yiiguide.com",
+    "description": "The source code of yiiguide.com.",
+    "type": "project",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0.11",
+        "yiisoft/yii2-apidoc": "*",
+        "vlucas/phpdotenv": "*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-debug": "*"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+defined('YII_DEBUG') or define('YII_DEBUG', false);
+
+require(__DIR__ . '/vendor/autoload.php');
+require(__DIR__ . '/bootstrap/bootstrap.php');
+require(ROOT_PATH . '/vendor/yiisoft/yii2/Yii.php');
+
+$config = \yii\helpers\ArrayHelper::merge(
+    require(ROOT_PATH . '/config/main.php'),
+    require(ROOT_PATH . '/config/build.php')
+);
+
+$application = new yii\console\Application($config);
+$code = $application->run();
+exit($code);
