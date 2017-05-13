@@ -7,4 +7,4 @@ TARGET_DIR="${BASE_DIR}/apps/yiiguide"
 
 cd ${YII2_DIR} && \
 git pull && \
-docker run -it --rm --volume "${CODE_DIR}:${CODE_DIR}" php:7.0 php ${BASE_DIR}/build guide ${YII2_DIR} ${TARGET_DIR} --interactive=1 --overwrite=1
+docker run --rm --volume "${CODE_DIR}:${CODE_DIR}" php:7.0 php ${BASE_DIR}/build guide ${YII2_DIR} ${TARGET_DIR} --interactive=1 --overwrite=1
