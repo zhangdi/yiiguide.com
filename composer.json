@@ -6,8 +6,7 @@
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "~2.0.11",
-        "yiisoft/yii2-apidoc": "*",
-        "vlucas/phpdotenv": "*"
+        "yiisoft/yii2-apidoc": "*"
     },
     "require-dev": {
         "yiisoft/yii2-gii": "*",

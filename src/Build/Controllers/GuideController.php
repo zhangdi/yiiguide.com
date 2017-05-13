@@ -8,7 +8,6 @@ use Yii;
 
 class GuideController extends \yii\apidoc\commands\GuideController
 {
-    public $defaultAction = 'guide';
     /**
      * @var string 页面标题
      */
@@ -22,13 +21,6 @@ class GuideController extends \yii\apidoc\commands\GuideController
      */
     public $overwrite = false;
 
-    /**
-     * @inheritDoc
-     */
-    public function actionGuide()
-    {
-        return parent::actionIndex([getenv('YII2_PATH') . '/docs/guide-zh-CN'], ROOT_PATH . '/apps/yiiguide');
-    }
 
     /**
      * @inheritDoc
