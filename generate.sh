@@ -2,7 +2,7 @@
 
 CODE_DIR="/opt/code"
 BASE_DIR="$( cd "$( dirname "$0" )" && pwd )"
-YII2_DIR='/opt/code/github.com/yiisoft/yii2/'
+YII2_DIR='/opt/code/github.com/yiisoft/yii2/docs/guide-zh-CN'
 TARGET_DIR="${BASE_DIR}/apps/yiiguide"
 
 cd ${YII2_DIR} && \
